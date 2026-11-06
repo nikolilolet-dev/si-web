@@ -19,17 +19,18 @@ export const UfhecLogo: React.FC<UfhecLogoProps> = ({
   };
 
   const { imgClass, textSize, subSize } = sizeMap[size];
+  const assetUrl = (fileName: string) => `${import.meta.env.BASE_URL}${fileName}`;
 
   return (
     <div className={`inline-flex items-center gap-3 ${className}`}>
       {/* Logotipo Oficial UFHEC recortado y nivelado */}
       <div className="relative shrink-0 flex items-center justify-center">
         <img
-          src="/ufhec-logo.png"
+          src={assetUrl('ufhec-logo.png')}
           onError={(e) => {
             const target = e.currentTarget;
             if (!target.src.includes('ufhec-logo.jpg')) {
-              target.src = '/ufhec-logo.jpg';
+              target.src = assetUrl('ufhec-logo.jpg');
             }
           }}
           alt="Logo Oficial Universidad Federico Henríquez y Carvajal (UFHEC)"
