@@ -1,0 +1,6 @@
+{
+  "name": "UFHEC - Contabilidad Superior: Unidad V",
+  "description": "Panel interactivo y exportador a PDF para la Exposición de la Unidad V: Partidas No Usuales y de Períodos Anteriores. UFHEC Grupo 2.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
